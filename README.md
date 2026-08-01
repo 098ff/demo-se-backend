@@ -49,7 +49,7 @@ cp .env.example .env
 Ensure `.env` contains your desired configuration:
 
 ```env
-PORT=5000
+PORT=5002
 MONGODB_URI=<your_mongo_db_connection_string>
 NODE_ENV=development
 ```
