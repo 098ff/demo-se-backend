@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "679c10000000000000000001",
+    "name": "Wireless Noise-Canceling Headphones",
+    "description": "Premium over-ear headphones with active noise cancellation and 30-hour battery life.",
+    "price": 199.99,
+    "category": "Electronics",
+    "inStock": true,
+    "stockQuantity": 45,
+    "tags": ["audio", "wireless", "headphones", "bluetooth"],
+    "createdAt": "2026-01-15T08:00:00.000Z",
+    "updatedAt": "2026-01-15T08:00:00.000Z"
+  },
+  {
+    "_id": "679c10000000000000000002",
+    "name": "Ergonomic Mechanical Keyboard",
+    "description": "Customizable RGB mechanical keyboard with tactile switches and split wrist rest.",
+    "price": 129.50,
+    "category": "Electronics",
+    "inStock": true,
+    "stockQuantity": 20,
+    "tags": ["keyboard", "gaming", "peripherals", "ergonomic"],
+    "createdAt": "2026-01-16T09:30:00.000Z",
+    "updatedAt": "2026-01-16T09:30:00.000Z"
+  },
+  {
+    "_id": "679c10000000000000000003",
+    "name": "Stainless Steel Water Bottle 1L",
+    "description": "Double-walled vacuum insulated water bottle that keeps liquids cold for 24 hours.",
+    "price": 24.99,
+    "category": "Fitness & Outdoor",
+    "inStock": true,
+    "stockQuantity": 150,
+    "tags": ["fitness", "water bottle", "hydration", "eco-friendly"],
+    "createdAt": "2026-01-18T11:15:00.000Z",
+    "updatedAt": "2026-01-18T11:15:00.000Z"
+  },
+  {
+    "_id": "679c10000000000000000004",
+    "name": "Organic Arabica Coffee Beans 1kg",
+    "description": "Single-origin medium roast whole coffee beans with rich chocolate and caramel notes.",
+    "price": 29.90,
+    "category": "Food & Beverage",
+    "inStock": true,
+    "stockQuantity": 80,
+    "tags": ["coffee", "organic", "arabica", "beverage"],
+    "createdAt": "2026-01-20T14:20:00.000Z",
+    "updatedAt": "2026-01-20T14:20:00.000Z"
+  },
+  {
+    "_id": "679c10000000000000000005",
+    "name": "Minimalist Leather Backpack",
+    "description": "Sleek water-resistant genuine leather backpack with dedicated 15-inch laptop compartment.",
+    "price": 89.99,
+    "category": "Fashion & Accessories",
+    "inStock": false,
+    "stockQuantity": 0,
+    "tags": ["backpack", "fashion", "leather", "bag"],
+    "createdAt": "2026-01-22T16:45:00.000Z",
+    "updatedAt": "2026-01-22T16:45:00.000Z"
+  }
+]
