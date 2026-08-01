@@ -152,7 +152,15 @@ npm run typecheck
 
 This repository includes a `mock-data.json` file containing sample product records.
 
-### Option A: Using `mongoimport` (Command Line)
+### Option A: Using the built-in Seeding Script (Recommended)
+
+Simply run the following command in your terminal to automatically connect and seed the database using the mock data:
+
+```bash
+npm run seed
+```
+
+### Option B: Using `mongoimport` (Command Line)
 
 Run the following command in your terminal to import the mock data into your local MongoDB:
 
@@ -160,7 +168,7 @@ Run the following command in your terminal to import the mock data into your loc
 mongoimport --db product_db --collection products --file mock-data.json --jsonArray --drop
 ```
 
-### Option B: Using MongoDB Compass (GUI)
+### Option C: Using MongoDB Compass (GUI)
 
 1. Open **MongoDB Compass** and connect to your database (`mongodb://localhost:27017`).
 2. Create or select database `product_db` and collection `products`.
