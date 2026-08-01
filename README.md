@@ -75,7 +75,6 @@ demo-se-backend/
 ├── .gitignore            # Git ignore rules
 ├── package.json          # Dependencies & npm scripts
 ├── tsconfig.json         # TypeScript compiler configuration
-├── mock-data.json        # Sample MongoDB dataset for import
 ├── README.md             # Project documentation
 └── src/
     ├── config/
@@ -96,6 +95,9 @@ demo-se-backend/
     ├── utils/
     │   ├── apiResponse.ts    # Standardized JSON response formatter
     │   └── customError.ts    # Custom AppError class for operational errors
+    ├── seeds/
+    │   ├── mock-data.json    # Sample MongoDB dataset for import
+    │   └── seed.ts           # Database seeding script
     └── index.ts              # Main Application Entrypoint & Express App setup
 ```
 
@@ -150,7 +152,7 @@ npm run typecheck
 
 ## 📥 Importing Mock Data to MongoDB
 
-This repository includes a `mock-data.json` file containing sample product records.
+This repository includes a `src/seeds/mock-data.json` file containing sample product records.
 
 ### Option A: Using the built-in Seeding Script (Recommended)
 
@@ -165,7 +167,7 @@ npm run seed
 Run the following command in your terminal to import the mock data into your local MongoDB:
 
 ```bash
-mongoimport --db product_db --collection products --file mock-data.json --jsonArray --drop
+mongoimport --db product_db --collection products --file src/seeds/mock-data.json --jsonArray --drop
 ```
 
 ### Option C: Using MongoDB Compass (GUI)
@@ -173,7 +175,7 @@ mongoimport --db product_db --collection products --file mock-data.json --jsonAr
 1. Open **MongoDB Compass** and connect to your database (`mongodb://localhost:27017`).
 2. Create or select database `product_db` and collection `products`.
 3. Click **Add Data** -> **Import JSON or CSV file**.
-4. Select `mock-data.json` from this project folder and click **Import**.
+4. Select `src/seeds/mock-data.json` from this project folder and click **Import**.
 
 ---
 

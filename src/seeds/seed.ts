@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import fs from "fs";
 import path from "path";
-import { ProductModel } from "./models/productModel.js";
+import { ProductModel } from "../models/productModel.js";
 import { fileURLToPath } from "url";
 
 // Load environment variables
@@ -24,7 +24,7 @@ const seedDatabase = async () => {
     console.log("[Seed] Connected successfully.");
 
     // Read mock-data.json
-    const mockDataPath = path.join(__dirname, "../mock-data.json");
+    const mockDataPath = path.join(__dirname, "mock-data.json");
     const rawData = fs.readFileSync(mockDataPath, "utf-8");
     const products = JSON.parse(rawData);
 
