@@ -120,7 +120,7 @@ To run the application locally with automatic restarting on code changes:
 npm run dev
 ```
 
-The server will start at `http://localhost:5000`.
+The server will start at `http://localhost:5002`.
 
 ### Case 2: Build & Production Mode
 
@@ -186,7 +186,7 @@ mongoimport --db product_db --collection products --file mock-data.json --jsonAr
 ### 1. Create a Product (`POST`)
 
 ```bash
-curl -X POST http://localhost:5000/api/products \
+curl -X POST http://localhost:5002/api/products \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Smart Fitness Watch",
@@ -202,19 +202,19 @@ curl -X POST http://localhost:5000/api/products \
 ### 2. Get All Products with Search & Pagination (`GET`)
 
 ```bash
-curl -X GET "http://localhost:5000/api/products?search=wireless&page=1&limit=5"
+curl -X GET "http://localhost:5002/api/products?search=wireless&page=1&limit=5"
 ```
 
 ### 3. Get Single Product by ID (`GET`)
 
 ```bash
-curl -X GET http://localhost:5000/api/products/679c10000000000000000001
+curl -X GET http://localhost:5002/api/products/679c10000000000000000001
 ```
 
 ### 4. Update Product (`PUT`)
 
 ```bash
-curl -X PUT http://localhost:5000/api/products/679c10000000000000000001 \
+curl -X PUT http://localhost:5002/api/products/679c10000000000000000001 \
   -H "Content-Type: application/json" \
   -d '{
     "price": 179.99,
@@ -225,5 +225,5 @@ curl -X PUT http://localhost:5000/api/products/679c10000000000000000001 \
 ### 5. Delete Product (`DELETE`)
 
 ```bash
-curl -X DELETE http://localhost:5000/api/products/679c10000000000000000001
+curl -X DELETE http://localhost:5002/api/products/679c10000000000000000001
 ```
